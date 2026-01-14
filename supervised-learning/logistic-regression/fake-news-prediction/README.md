@@ -78,7 +78,7 @@ def predict_news(text):
     vectorized = vectorizer.transform([processed])
     prediction = model.predict(vectorized)[0]
     return "Fake News" if prediction == 1 else "Real News"
-
+```
 # Usage
 article = "Breaking: Aliens confirmed living among us..."
 print(predict_news(article))
